@@ -32,6 +32,7 @@ export default function Home() {
       const url = URL.createObjectURL(blob);
       setVideoUrl(url);
       setMsg('Prontinho! Baixe seu vídeo legendado. 🎉');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
       setMsg(`⚠️ ${e.message}`);
     } finally {
