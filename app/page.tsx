@@ -18,7 +18,7 @@ export default function Home() {
     fd.append('file', file);
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/full_process`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/full_process`, {
         method: 'POST',
         body: fd
       });
